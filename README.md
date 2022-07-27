@@ -39,7 +39,7 @@ $ python data_util.py
 ```
 
 ## Training Model
-* Go inside the `MER`.
+* Go inside the `MER` folder.
 ```
 $ cd MER
 ```
