@@ -1,0 +1,403 @@
+Subject (1/80): m_13
+Ground Truth:	[5, 2, 5, 0, 4, 2, 3, 5, 5, 5, 4, 5, 2, 5, 2, 3, 4]
+Predicted:	[1, 2, 3, 1, 1, 2, 2, 2, 4, 0, 2, 3, 2, 2, 2, 4, 4]
+[OVERALL] Accuracy: 0.2941 | UF1 score: 0.1667 | UAR score: 0.2222
+=========================================================
+Subject (2/80): m_17
+Ground Truth:	[0, 0, 4, 3]
+Predicted:	[5, 0, 2, 2]
+[OVERALL] Accuracy: 0.2857 | UF1 score: 0.2095 | UAR score: 0.2639
+=========================================================
+Subject (3/80): m_18
+Ground Truth:	[2, 2, 0, 5, 2, 5, 0, 5, 2, 5, 2, 0]
+Predicted:	[2, 2, 5, 4, 2, 5, 0, 5, 2, 5, 2, 4]
+[OVERALL] Accuracy: 0.4545 | UF1 score: 0.2986 | UAR score: 0.3093
+=========================================================
+Subject (4/80): m_25
+Ground Truth:	[2, 0, 2, 2]
+Predicted:	[2, 0, 2, 2]
+[OVERALL] Accuracy: 0.5135 | UF1 score: 0.3238 | UAR score: 0.3252
+=========================================================
+Subject (5/80): m_28
+Ground Truth:	[5, 2, 0]
+Predicted:	[4, 0, 0]
+[OVERALL] Accuracy: 0.5000 | UF1 score: 0.3164 | UAR score: 0.3205
+=========================================================
+Subject (6/80): s_006
+Ground Truth:	[0, 0, 2, 0, 3, 0, 2, 0, 1, 0, 0]
+Predicted:	[0, 0, 4, 5, 3, 4, 2, 0, 4, 0, 5]
+[OVERALL] Accuracy: 0.5098 | UF1 score: 0.3600 | UAR score: 0.3583
+=========================================================
+Subject (7/80): s_009
+Ground Truth:	[0, 0, 3, 2]
+Predicted:	[0, 4, 4, 4]
+[OVERALL] Accuracy: 0.4909 | UF1 score: 0.3461 | UAR score: 0.3403
+=========================================================
+Subject (8/80): s_010
+Ground Truth:	[0, 0, 0, 0]
+Predicted:	[0, 0, 0, 0]
+[OVERALL] Accuracy: 0.5254 | UF1 score: 0.3593 | UAR score: 0.3553
+=========================================================
+Subject (9/80): s_011
+Ground Truth:	[5, 0, 5, 0, 4, 0, 4, 4, 5, 4, 4, 5, 0, 5, 0, 4, 4]
+Predicted:	[4, 5, 4, 0, 4, 0, 5, 4, 4, 4, 4, 5, 0, 5, 0, 4, 4]
+[OVERALL] Accuracy: 0.5658 | UF1 score: 0.4238 | UAR score: 0.4328
+=========================================================
+Subject (10/80): s_013
+Ground Truth:	[0, 0, 0, 0, 0, 0]
+Predicted:	[5, 2, 4, 0, 0, 0]
+[OVERALL] Accuracy: 0.5610 | UF1 score: 0.4137 | UAR score: 0.4280
+=========================================================
+Subject (11/80): s_016
+Ground Truth:	[2, 0, 0, 4, 2]
+Predicted:	[2, 5, 0, 4, 2]
+[OVERALL] Accuracy: 0.5747 | UF1 score: 0.4212 | UAR score: 0.4353
+=========================================================
+Subject (12/80): s_017
+Ground Truth:	[2, 0]
+Predicted:	[4, 0]
+[OVERALL] Accuracy: 0.5730 | UF1 score: 0.4175 | UAR score: 0.4298
+=========================================================
+Subject (13/80): s_020
+Ground Truth:	[4, 4, 0]
+Predicted:	[2, 4, 0]
+[OVERALL] Accuracy: 0.5761 | UF1 score: 0.4189 | UAR score: 0.4276
+=========================================================
+Subject (14/80): s_021
+Ground Truth:	[0, 0]
+Predicted:	[0, 0]
+[OVERALL] Accuracy: 0.5851 | UF1 score: 0.4214 | UAR score: 0.4307
+=========================================================
+Subject (15/80): s_022
+Ground Truth:	[4, 0, 0, 4, 0]
+Predicted:	[4, 0, 0, 4, 0]
+[OVERALL] Accuracy: 0.6061 | UF1 score: 0.4330 | UAR score: 0.4423
+=========================================================
+Subject (16/80): s_023
+Ground Truth:	[0]
+Predicted:	[0]
+[OVERALL] Accuracy: 0.6100 | UF1 score: 0.4340 | UAR score: 0.4436
+=========================================================
+Subject (17/80): s_026
+Ground Truth:	[0, 0, 0, 5, 0, 0, 0]
+Predicted:	[5, 0, 0, 4, 5, 0, 0]
+[OVERALL] Accuracy: 0.6075 | UF1 score: 0.4271 | UAR score: 0.4404
+=========================================================
+Subject (18/80): s_030
+Ground Truth:	[0, 0, 0]
+Predicted:	[5, 0, 5]
+[OVERALL] Accuracy: 0.6000 | UF1 score: 0.4219 | UAR score: 0.4369
+=========================================================
+Subject (19/80): s_031
+Ground Truth:	[0]
+Predicted:	[4]
+[OVERALL] Accuracy: 0.5946 | UF1 score: 0.4186 | UAR score: 0.4348
+=========================================================
+Subject (20/80): s_032
+Ground Truth:	[0, 0, 1, 0]
+Predicted:	[0, 5, 2, 0]
+[OVERALL] Accuracy: 0.5913 | UF1 score: 0.4148 | UAR score: 0.4349
+=========================================================
+Subject (21/80): s_033
+Ground Truth:	[1, 0, 0, 4, 0]
+Predicted:	[0, 0, 0, 4, 0]
+[OVERALL] Accuracy: 0.6000 | UF1 score: 0.4193 | UAR score: 0.4409
+=========================================================
+Subject (22/80): s_034
+Ground Truth:	[0, 0, 0]
+Predicted:	[0, 0, 0]
+[OVERALL] Accuracy: 0.6098 | UF1 score: 0.4214 | UAR score: 0.4436
+=========================================================
+Subject (23/80): s_035
+Ground Truth:	[0, 0, 3, 3, 0, 1, 2]
+Predicted:	[5, 0, 2, 2, 0, 1, 2]
+[OVERALL] Accuracy: 0.6077 | UF1 score: 0.4508 | UAR score: 0.4773
+=========================================================
+Subject (24/80): s_037
+Ground Truth:	[0]
+Predicted:	[0]
+[OVERALL] Accuracy: 0.6107 | UF1 score: 0.4514 | UAR score: 0.4781
+=========================================================
+Subject (25/80): c_sub17
+Ground Truth:	[4, 5, 5, 5, 1, 5, 4, 4, 5, 5, 5, 5, 5, 4, 4, 5, 5, 4, 1, 5, 5, 5, 4, 2]
+Predicted:	[4, 0, 0, 5, 1, 0, 4, 4, 0, 0, 0, 0, 5, 2, 4, 5, 0, 2, 1, 5, 0, 0, 4, 2]
+[OVERALL] Accuracy: 0.5935 | UF1 score: 0.5003 | UAR score: 0.5224
+=========================================================
+Subject (26/80): c_sub19
+Ground Truth:	[2, 2, 1, 5, 4, 4, 2, 5, 2, 5, 4, 2]
+Predicted:	[2, 2, 1, 5, 4, 4, 4, 5, 2, 5, 4, 2]
+[OVERALL] Accuracy: 0.6168 | UF1 score: 0.5338 | UAR score: 0.5496
+=========================================================
+Subject (27/80): c_sub26
+Ground Truth:	[5, 5, 1, 5, 5, 5, 4, 5, 5, 5, 5, 4]
+Predicted:	[5, 5, 2, 5, 5, 5, 4, 5, 5, 5, 5, 4]
+[OVERALL] Accuracy: 0.6369 | UF1 score: 0.5523 | UAR score: 0.5631
+=========================================================
+Subject (28/80): m_1
+Ground Truth:	[2, 3, 4, 2, 1, 5, 2, 4, 2, 5, 0, 3, 2, 2, 1, 2, 4, 5, 2, 5, 1, 5, 2, 5, 4, 5, 5, 2, 5, 2, 2, 5, 5, 2, 4, 2, 2, 4, 2, 2, 2, 2, 1, 5, 5, 2, 4, 5, 3, 5, 2, 5, 5, 5, 0, 3, 5, 1, 5, 5, 5, 2, 5, 4, 1, 0, 5, 4, 4, 5, 5, 5, 0, 2, 5, 0, 2, 1, 4, 4, 2, 5, 4, 2, 1, 5, 2, 2, 4, 5, 0, 3, 5, 2]
+Predicted:	[2, 5, 2, 2, 5, 2, 2, 4, 2, 5, 2, 2, 2, 2, 4, 2, 1, 5, 2, 0, 1, 1, 2, 5, 4, 5, 5, 2, 5, 2, 2, 5, 4, 2, 2, 2, 2, 4, 5, 2, 2, 2, 2, 5, 4, 2, 4, 5, 4, 4, 2, 5, 5, 5, 0, 2, 5, 1, 5, 2, 5, 2, 5, 4, 2, 4, 5, 4, 4, 5, 3, 0, 5, 2, 5, 4, 2, 2, 2, 4, 2, 5, 4, 2, 1, 5, 2, 2, 4, 5, 2, 5, 5, 2]
+[OVERALL] Accuracy: 0.6557 | UF1 score: 0.5571 | UAR score: 0.5638
+=========================================================
+Subject (29/80): m_4
+Ground Truth:	[5, 2, 2, 5, 2, 5, 4, 1]
+Predicted:	[5, 2, 2, 5, 2, 5, 4, 4]
+[OVERALL] Accuracy: 0.6619 | UF1 score: 0.5587 | UAR score: 0.5641
+=========================================================
+Subject (30/80): m_10
+Ground Truth:	[4, 4, 1, 5, 5, 5, 2, 5, 3, 5, 5, 2]
+Predicted:	[4, 4, 1, 5, 0, 5, 2, 5, 5, 5, 5, 2]
+[OVERALL] Accuracy: 0.6689 | UF1 score: 0.5679 | UAR score: 0.5736
+=========================================================
+Subject (31/80): m_11
+Ground Truth:	[2, 2, 1, 5, 4, 5, 1, 5, 2, 5, 2, 2]
+Predicted:	[2, 2, 1, 5, 4, 5, 4, 4, 2, 5, 2, 2]
+[OVERALL] Accuracy: 0.6754 | UF1 score: 0.5732 | UAR score: 0.5777
+=========================================================
+Subject (32/80): m_12
+Ground Truth:	[2, 1, 1, 2, 2, 2]
+Predicted:	[2, 5, 2, 2, 2, 2]
+[OVERALL] Accuracy: 0.6752 | UF1 score: 0.5686 | UAR score: 0.5718
+=========================================================
+Subject (33/80): m_15
+Ground Truth:	[2, 4, 3, 2, 1, 4, 1, 4, 5, 2]
+Predicted:	[2, 3, 5, 3, 1, 4, 0, 3, 5, 2]
+[OVERALL] Accuracy: 0.6698 | UF1 score: 0.5653 | UAR score: 0.5668
+=========================================================
+Subject (34/80): m_20
+Ground Truth:	[5, 2, 1, 5, 2, 5]
+Predicted:	[5, 3, 2, 5, 2, 5]
+[OVERALL] Accuracy: 0.6697 | UF1 score: 0.5632 | UAR score: 0.5643
+=========================================================
+Subject (35/80): m_23
+Ground Truth:	[1]
+Predicted:	[2]
+[OVERALL] Accuracy: 0.6677 | UF1 score: 0.5604 | UAR score: 0.5617
+=========================================================
+Subject (36/80): m_30
+Ground Truth:	[5, 1, 5, 2, 2, 2, 3, 5, 2, 2, 5, 2, 5, 2, 2, 2, 5, 4, 2, 2, 4, 1, 5, 2, 5, 5, 5, 5, 4, 4, 2, 5, 2]
+Predicted:	[3, 1, 5, 2, 2, 2, 5, 5, 2, 2, 5, 2, 5, 2, 2, 2, 3, 4, 2, 3, 5, 1, 5, 2, 5, 5, 5, 2, 4, 4, 2, 5, 2]
+[OVERALL] Accuracy: 0.6814 | UF1 score: 0.5733 | UAR score: 0.5715
+=========================================================
+Subject (37/80): s_015
+Ground Truth:	[2, 1]
+Predicted:	[2, 2]
+[OVERALL] Accuracy: 0.6804 | UF1 score: 0.5710 | UAR score: 0.5693
+=========================================================
+Subject (38/80): s_018
+Ground Truth:	[5, 2, 1]
+Predicted:	[5, 2, 1]
+[OVERALL] Accuracy: 0.6831 | UF1 score: 0.5752 | UAR score: 0.5733
+=========================================================
+Subject (39/80): c_sub02
+Ground Truth:	[2, 2, 4, 2]
+Predicted:	[2, 5, 1, 1]
+[OVERALL] Accuracy: 0.6784 | UF1 score: 0.5691 | UAR score: 0.5680
+=========================================================
+Subject (40/80): c_sub03
+Ground Truth:	[5, 5, 2, 5, 5]
+Predicted:	[5, 5, 2, 5, 5]
+[OVERALL] Accuracy: 0.6827 | UF1 score: 0.5714 | UAR score: 0.5703
+=========================================================
+Subject (41/80): c_sub05
+Ground Truth:	[2, 2, 4, 5, 2, 2, 2]
+Predicted:	[2, 2, 4, 5, 2, 2, 2]
+[OVERALL] Accuracy: 0.6885 | UF1 score: 0.5744 | UAR score: 0.5726
+=========================================================
+Subject (42/80): c_sub06
+Ground Truth:	[2, 2, 5, 4]
+Predicted:	[2, 2, 4, 3]
+[OVERALL] Accuracy: 0.6865 | UF1 score: 0.5722 | UAR score: 0.5698
+=========================================================
+Subject (43/80): c_sub12
+Ground Truth:	[2, 2, 5, 5, 5, 2, 5, 4, 5, 2, 4]
+Predicted:	[0, 0, 5, 5, 5, 4, 5, 4, 5, 2, 4]
+[OVERALL] Accuracy: 0.6877 | UF1 score: 0.5723 | UAR score: 0.5698
+=========================================================
+Subject (44/80): c_sub15
+Ground Truth:	[5, 4, 2]
+Predicted:	[5, 4, 1]
+[OVERALL] Accuracy: 0.6875 | UF1 score: 0.5713 | UAR score: 0.5696
+=========================================================
+Subject (45/80): c_sub24
+Ground Truth:	[5, 2, 2, 2, 2, 5]
+Predicted:	[0, 2, 2, 2, 2, 5]
+[OVERALL] Accuracy: 0.6897 | UF1 score: 0.5715 | UAR score: 0.5700
+=========================================================
+Subject (46/80): c_sub25
+Ground Truth:	[5, 2, 2, 5, 5]
+Predicted:	[0, 2, 2, 5, 5]
+[OVERALL] Accuracy: 0.6910 | UF1 score: 0.5716 | UAR score: 0.5703
+=========================================================
+Subject (47/80): m_2
+Ground Truth:	[5, 2, 5, 2, 5, 4, 2, 2, 5, 2, 4, 2, 4, 4, 0, 2, 0, 2, 4, 5, 2, 5, 2, 5, 3, 2, 2, 2, 1, 2, 2, 2, 2, 5, 2, 2, 4, 2, 2, 3, 1, 2, 2, 3, 2, 2, 2]
+Predicted:	[5, 2, 5, 3, 5, 4, 2, 2, 4, 2, 4, 2, 4, 4, 0, 2, 2, 2, 4, 5, 2, 5, 2, 5, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 4, 2, 2, 3, 2, 2, 2, 4, 2, 2, 2]
+[OVERALL] Accuracy: 0.7031 | UF1 score: 0.5823 | UAR score: 0.5792
+=========================================================
+Subject (48/80): m_3
+Ground Truth:	[2, 2, 1, 5, 2, 2, 5, 5, 2, 2, 2, 4, 2, 4, 5, 5, 2, 4, 2, 2, 5, 2, 2, 1, 2, 5, 4, 2, 2, 2, 5, 2, 5, 2, 5, 3, 2, 5, 2, 5]
+Predicted:	[2, 2, 1, 3, 2, 5, 5, 5, 2, 2, 2, 4, 2, 5, 5, 5, 2, 4, 2, 2, 5, 3, 4, 1, 2, 3, 4, 2, 2, 2, 5, 2, 5, 2, 5, 5, 2, 5, 2, 5]
+[OVERALL] Accuracy: 0.7129 | UF1 score: 0.5897 | UAR score: 0.5857
+=========================================================
+Subject (49/80): m_5
+Ground Truth:	[3, 2, 4, 5, 2, 5, 5, 5, 4]
+Predicted:	[2, 2, 0, 5, 2, 2, 5, 2, 4]
+[OVERALL] Accuracy: 0.7101 | UF1 score: 0.5873 | UAR score: 0.5830
+=========================================================
+Subject (50/80): m_7
+Ground Truth:	[4, 2, 2]
+Predicted:	[4, 2, 2]
+[OVERALL] Accuracy: 0.7118 | UF1 score: 0.5883 | UAR score: 0.5838
+=========================================================
+Subject (51/80): m_8
+Ground Truth:	[4, 4, 4, 3, 2, 5, 3, 4, 5, 4]
+Predicted:	[5, 4, 2, 5, 0, 5, 5, 4, 5, 0]
+[OVERALL] Accuracy: 0.7058 | UF1 score: 0.5837 | UAR score: 0.5783
+=========================================================
+Subject (52/80): m_9
+Ground Truth:	[5, 2, 5, 3, 2, 2, 4, 5, 2, 5, 5, 2, 5, 5, 3]
+Predicted:	[5, 2, 5, 4, 2, 2, 4, 5, 2, 5, 5, 2, 5, 5, 4]
+[OVERALL] Accuracy: 0.7103 | UF1 score: 0.5852 | UAR score: 0.5806
+=========================================================
+Subject (53/80): m_16
+Ground Truth:	[5, 5, 2, 5, 5, 5, 2, 5, 5, 5, 5, 5]
+Predicted:	[5, 5, 2, 5, 5, 5, 2, 5, 5, 5, 5, 5]
+[OVERALL] Accuracy: 0.7166 | UF1 score: 0.5882 | UAR score: 0.5838
+=========================================================
+Subject (54/80): m_19
+Ground Truth:	[2, 2]
+Predicted:	[2, 2]
+[OVERALL] Accuracy: 0.7177 | UF1 score: 0.5885 | UAR score: 0.5840
+=========================================================
+Subject (55/80): m_21
+Ground Truth:	[2, 2, 4, 3, 4, 2, 4, 2, 3, 2, 3]
+Predicted:	[2, 2, 4, 4, 4, 2, 5, 2, 3, 2, 2]
+[OVERALL] Accuracy: 0.7179 | UF1 score: 0.5944 | UAR score: 0.5888
+=========================================================
+Subject (56/80): m_22
+Ground Truth:	[5, 2, 2, 2, 2, 5]
+Predicted:	[2, 2, 2, 2, 2, 5]
+[OVERALL] Accuracy: 0.7191 | UF1 score: 0.5945 | UAR score: 0.5888
+=========================================================
+Subject (57/80): m_24
+Ground Truth:	[2, 2, 4, 2]
+Predicted:	[2, 2, 4, 2]
+[OVERALL] Accuracy: 0.7211 | UF1 score: 0.5955 | UAR score: 0.5896
+=========================================================
+Subject (58/80): m_26
+Ground Truth:	[2]
+Predicted:	[2]
+[OVERALL] Accuracy: 0.7215 | UF1 score: 0.5957 | UAR score: 0.5897
+=========================================================
+Subject (59/80): m_27
+Ground Truth:	[5, 2]
+Predicted:	[5, 2]
+[OVERALL] Accuracy: 0.7225 | UF1 score: 0.5961 | UAR score: 0.5901
+=========================================================
+Subject (60/80): m_29
+Ground Truth:	[2, 2, 2, 2]
+Predicted:	[2, 2, 2, 2]
+[OVERALL] Accuracy: 0.7244 | UF1 score: 0.5966 | UAR score: 0.5905
+=========================================================
+Subject (61/80): s_007
+Ground Truth:	[4, 4, 2, 4, 3, 4, 4, 2]
+Predicted:	[4, 3, 2, 2, 4, 3, 3, 2]
+[OVERALL] Accuracy: 0.7197 | UF1 score: 0.5923 | UAR score: 0.5850
+=========================================================
+Subject (62/80): s_012
+Ground Truth:	[3, 3, 2]
+Predicted:	[2, 3, 4]
+[OVERALL] Accuracy: 0.7177 | UF1 score: 0.5963 | UAR score: 0.5886
+=========================================================
+Subject (63/80): s_014
+Ground Truth:	[4, 3, 4, 4, 2, 4, 4, 4, 4]
+Predicted:	[0, 3, 0, 0, 2, 4, 0, 0, 4]
+[OVERALL] Accuracy: 0.7136 | UF1 score: 0.5964 | UAR score: 0.5882
+=========================================================
+Subject (64/80): s_028
+Ground Truth:	[2, 2]
+Predicted:	[4, 0]
+[OVERALL] Accuracy: 0.7112 | UF1 score: 0.5945 | UAR score: 0.5867
+=========================================================
+Subject (65/80): c_sub09
+Ground Truth:	[4, 4, 3, 4, 4, 4]
+Predicted:	[4, 4, 3, 4, 4, 4]
+[OVERALL] Accuracy: 0.7140 | UF1 score: 0.6022 | UAR score: 0.5938
+=========================================================
+Subject (66/80): c_sub10
+Ground Truth:	[3]
+Predicted:	[3]
+[OVERALL] Accuracy: 0.7145 | UF1 score: 0.6068 | UAR score: 0.5979
+=========================================================
+Subject (67/80): m_6
+Ground Truth:	[5, 4, 3, 5, 4, 5, 5, 3]
+Predicted:	[5, 4, 3, 5, 4, 5, 5, 3]
+[OVERALL] Accuracy: 0.7182 | UF1 score: 0.6170 | UAR score: 0.6075
+=========================================================
+Subject (68/80): c_sub01
+Ground Truth:	[5, 5, 4]
+Predicted:	[5, 5, 4]
+[OVERALL] Accuracy: 0.7196 | UF1 score: 0.6180 | UAR score: 0.6085
+=========================================================
+Subject (69/80): c_sub13
+Ground Truth:	[4, 4]
+Predicted:	[4, 4]
+[OVERALL] Accuracy: 0.7205 | UF1 score: 0.6190 | UAR score: 0.6094
+=========================================================
+Subject (70/80): c_sub14
+Ground Truth:	[4, 4, 4]
+Predicted:	[4, 4, 4]
+[OVERALL] Accuracy: 0.7219 | UF1 score: 0.6204 | UAR score: 0.6108
+=========================================================
+Subject (71/80): c_sub16
+Ground Truth:	[4, 4]
+Predicted:	[4, 5]
+[OVERALL] Accuracy: 0.7212 | UF1 score: 0.6200 | UAR score: 0.6101
+=========================================================
+Subject (72/80): c_sub23
+Ground Truth:	[5, 5, 4, 5, 5]
+Predicted:	[5, 5, 4, 5, 5]
+[OVERALL] Accuracy: 0.7234 | UF1 score: 0.6214 | UAR score: 0.6116
+=========================================================
+Subject (73/80): m_14
+Ground Truth:	[4]
+Predicted:	[4]
+[OVERALL] Accuracy: 0.7238 | UF1 score: 0.6218 | UAR score: 0.6120
+=========================================================
+Subject (74/80): s_019
+Ground Truth:	[4]
+Predicted:	[4]
+[OVERALL] Accuracy: 0.7242 | UF1 score: 0.6223 | UAR score: 0.6124
+=========================================================
+Subject (75/80): c_sub04
+Ground Truth:	[5, 5]
+Predicted:	[5, 5]
+[OVERALL] Accuracy: 0.7251 | UF1 score: 0.6227 | UAR score: 0.6129
+=========================================================
+Subject (76/80): c_sub07
+Ground Truth:	[5, 5, 5, 5, 5]
+Predicted:	[5, 5, 5, 5, 5]
+[OVERALL] Accuracy: 0.7273 | UF1 score: 0.6238 | UAR score: 0.6141
+=========================================================
+Subject (77/80): c_sub11
+Ground Truth:	[5, 5, 5, 5]
+Predicted:	[0, 5, 5, 5]
+[OVERALL] Accuracy: 0.7274 | UF1 score: 0.6234 | UAR score: 0.6141
+=========================================================
+Subject (78/80): c_sub20
+Ground Truth:	[5, 5]
+Predicted:	[5, 5]
+[OVERALL] Accuracy: 0.7283 | UF1 score: 0.6238 | UAR score: 0.6145
+=========================================================
+Subject (79/80): s_024
+Ground Truth:	[5]
+Predicted:	[3]
+[OVERALL] Accuracy: 0.7271 | UF1 score: 0.6227 | UAR score: 0.6139
+=========================================================
+Subject (80/80): s_036
+Ground Truth:	[5]
+Predicted:	[2]
+[OVERALL] Accuracy: 0.7260 | UF1 score: 0.6220 | UAR score: 0.6132
+=========================================================
+Final Accuracy: 0.7260
+Final UF1 score: 0.6220
+Final UAR score: 0.6132
