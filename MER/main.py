@@ -1,4 +1,3 @@
-import random
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -11,8 +10,6 @@ from data_util import generate_losocv_dataset, generate_dataloader, get_subjects
 from utils import read_file
 
 torch.manual_seed(0)
-np.random.seed(0)
-random.seed(0)
 
 config = read_file('mer_config.json')
 dataset = read_file(f'../.data/dataset_{config["img_dim"]}.json')
@@ -171,7 +168,7 @@ def train_locosv():
     plt.title('FULL')
     plt.legend()
     plt.savefig('_uf1_uar.png')
-    plt.close()
+    plt.close('all')
 
 def initialize_model():
     model = MER()

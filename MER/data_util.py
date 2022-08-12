@@ -1,3 +1,4 @@
+import random
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -42,6 +43,11 @@ def generate_losocv_dataset(dataset, subject, visualize=True):
 
     return train_X, train_y, test_X, test_y
 
+def seed_worker(worker_id):
+    worker_seed = torch.initial_seed() % 2**32
+    np.random.seed(worker_seed)
+    random.seed(worker_seed)
+
 def generate_dataloader(X, y, batch_size):
     X_data = []
     y_data = []
@@ -66,6 +72,8 @@ def generate_dataloader(X, y, batch_size):
     data_loader = DataLoader(tensor_dataset, 
                             batch_size=batch_size, 
                             shuffle=True,
+                            num_workers=4,
+                            worker_init_fn=seed_worker,
                             generator=g)
 
     return data_loader
