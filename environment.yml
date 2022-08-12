@@ -1,21 +1,21 @@
 name: S3S-CNN
 channels:
-  - defaults
   - conda-forge
+  - defaults
   - pytorch
 dependencies:
-  - cudatoolkit=11.3
+  - nvidia::cudatoolkit=11.3
+  - pytorch::pytorch
+  - pytorch::torchaudio
+  - pytorch::torchvision
   - ipykernel
   - matplotlib
   - numpy
   - pandas
   - pip
-  - pytorch
   - scikit-learn
   - scipy
   - seaborn
-  - torchaudio
-  - torchvision
   - tqdm
   - pip:
-    - opencv-python
+    - opencv-python-headless

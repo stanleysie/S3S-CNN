@@ -151,7 +151,6 @@ def train_locosv():
             print(f'[OVERALL] Accuracy: {accuracy:.4f} | UF1 score: {uf1:.4f} | UAR score: {uar:.4f}')
             print('=========================================================')
 
-
     uf1, uar = evaluation_metrics(actual, predicted, emotions) 
 
     f.write(f'Final Accuracy: {accuracy_history[-1]:.4f}\n')
@@ -168,7 +167,7 @@ def train_locosv():
     plt.title('FULL')
     plt.legend()
     plt.savefig('_uf1_uar.png')
-    plt.close('all')
+    plt.close()
 
 def initialize_model():
     model = MER()
