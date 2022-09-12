@@ -68,11 +68,11 @@ def train_locosv():
     num_correct = 0
     total_sample = 0
 
-    f = open('.logs/CASME_II_logs.txt', 'a')
+    f = open('.logs/FULL_logs.txt', 'a')
     cm_df = None
 
     subjects = get_subjects(dataset)
-    subjects = [subject for subject in subjects if 'c_' in subject]
+    # subjects = [subject for subject in subjects if 'c_' in subject]
 
     for i, subject in enumerate(subjects):
         f.write(f'Subject ({i+1}/{len(subjects)}): {subject}\n')
@@ -165,12 +165,12 @@ def train_locosv():
     print(f'Final UAR score: {uar:.4f}')
     f.close()
 
-    cm_df.to_csv('CASME_II_cm_df.csv')
+    cm_df.to_csv('FULL_cm_df.csv')
     plt.plot(uf1_history, label='UF1')
     plt.plot(uar_history, label='UAR')
-    plt.title('CASME II')
+    plt.title('FULL')
     plt.legend()
-    plt.savefig('CASME_II_uf1_uar.png')
+    plt.savefig('FULL_uf1_uar.png')
     plt.close()
 
 def initialize_model():
