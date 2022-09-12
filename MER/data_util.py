@@ -5,6 +5,9 @@ import matplotlib.pyplot as plt
 import cv2
 import torch
 from torch.utils.data import TensorDataset, DataLoader
+from utils import read_file
+
+config = read_file('mer_config.json')
 
 def generate_losocv_dataset(dataset, subject, visualize=True):
     train_X = []
@@ -53,7 +56,7 @@ def generate_dataloader(X, y, batch_size):
     y_data = []
 
     g = torch.Generator()
-    g.manual_seed(0)
+    g.manual_seed(config['gen_seed'])
 
     for (of, ops, h, v), y in zip(X, y):
         of = cv2.imread(of, cv2.IMREAD_GRAYSCALE)

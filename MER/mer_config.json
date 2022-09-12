@@ -2,5 +2,7 @@
     "lr": 0.001,
     "batch_size": 128,
     "epoch": 30,
-    "img_dim": 128
+    "img_dim": 128,
+    "seed": 0,
+    "gen_seed": 0
 }

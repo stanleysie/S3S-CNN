@@ -1,3 +1,4 @@
+import random
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -9,12 +10,15 @@ from model import MER
 from data_util import generate_losocv_dataset, generate_dataloader, get_subjects
 from utils import read_file
 
-torch.manual_seed(0)
-
 config = read_file('mer_config.json')
 dataset = read_file(f'../.data/dataset_{config["img_dim"]}.json')
 print(config)
 
+random.seed(config['seed'])
+np.random.seed(config['seed'])
+torch.manual_seed(config['seed'])
+torch.backends.cudnn.deterministic = True
+torch.backends.cudnn.benchmark = False
 
 def compute_f1_recall(real, pred):
     TN, FP, FN, TP = confusion_matrix(real, pred).ravel()
@@ -64,11 +68,11 @@ def train_locosv():
     num_correct = 0
     total_sample = 0
 
-    f = open('.logs/_logs.txt', 'a')
+    f = open('.logs/CASME_II_logs.txt', 'a')
     cm_df = None
 
     subjects = get_subjects(dataset)
-    # subjects = [subject for subject in subjects if 'c_' in subject]
+    subjects = [subject for subject in subjects if 'c_' in subject]
 
     for i, subject in enumerate(subjects):
         f.write(f'Subject ({i+1}/{len(subjects)}): {subject}\n')
@@ -161,12 +165,12 @@ def train_locosv():
     print(f'Final UAR score: {uar:.4f}')
     f.close()
 
-    cm_df.to_csv('_cm_df.csv')
+    cm_df.to_csv('CASME_II_cm_df.csv')
     plt.plot(uf1_history, label='UF1')
     plt.plot(uar_history, label='UAR')
-    plt.title('FULL')
+    plt.title('CASME II')
     plt.legend()
-    plt.savefig('_uf1_uar.png')
+    plt.savefig('CASME_II_uf1_uar.png')
     plt.close()
 
 def initialize_model():
