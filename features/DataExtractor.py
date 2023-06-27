@@ -47,6 +47,8 @@ class DataExtractor:
 
             image_path = f"{self.data_dir}/{db_name}/data"
             for d in df_list:
+                if d['OnsetFrame'] == d['ApexFrame']:
+                    continue
                 onset_imgs = glob.glob(f"{image_path}/{d['Subject']}/{d['Filename']}/*{d['OnsetFrame']}.jpg")
                 apex_imgs = glob.glob(f"{image_path}/{d['Subject']}/{d['Filename']}/*{d['ApexFrame']}.jpg")
                 
@@ -60,6 +62,8 @@ class DataExtractor:
 
             image_path = f"{self.data_dir}/{db_name}/data/{emotion}"
             for d in df_list:
+                if d['OnsetFrame'] == d['ApexFrame']:
+                    continue
                 onset_imgs = glob.glob(f"{image_path}/{d['Filename']}/*{d['OnsetFrame']}.jpg")
                 apex_imgs = glob.glob(f"{image_path}/{d['Filename']}/*{d['ApexFrame']}.jpg")
                 
@@ -73,6 +77,8 @@ class DataExtractor:
 
             image_path = f"{self.data_dir}/{db_name}/data"
             for d in df_list:
+                if d['OnsetFrame'] == d['ApexFrame']:
+                    continue
                 onset_imgs = glob.glob(f"{image_path}/{d['Subject']}/{d['Filename']}/img{d['OnsetFrame']}.jpg")
                 apex_imgs = glob.glob(f"{image_path}/{d['Subject']}/{d['Filename']}/img{d['ApexFrame']}.jpg")
                 

@@ -1,0 +1,9 @@
+python3 main.py \
+--lr 0.001 \
+--batch_size 128 \
+--epoch 30 \
+--img_dim 128 \
+--n_train 5 \
+--seeds "196081390,190531418,34258521,16342552,4094981" \
+--dataset "D:\DATASET\ME_DATASET\S3S-CNN-v2\dataset_all_synthetic.json" \
+--out_dir "D:\_\THESIS\s3s-cnn\multi_runs\expr_0" \

@@ -1,16 +1,16 @@
 {
-    "emotions": ["anger", "sadness", "surprise", "fear", "happiness", "disgust"],
+    "emotions": ["anger", "disgust", "fear", "happiness", "sadness", "surprise"],
     "dbs": ["SAMM", "MMEW", "CASME_II"],
     "db_OF": ["SAMM", "CASME_II"],
     "img_dim": [128, 128],
-    "data_dir": "/mnt/d/DATASET",
-    "out_dir": "/mnt/d/DATASET/MER_DATASET/128",
+    "data_dir": "D:\\DATASET",
+    "out_dir": "D:\\DATASET\\ME_DATASET\\S3S-CNN-v2",
     "facs_dir": {
-        "SAMM": "/mnt/d/DATASET/SAMM/SAMM_FACS.csv",
-        "MMEW": "/mnt/d/DATASET/MMEW/MMEW_FACS.csv",
-        "CASME_II": "/mnt/d/DATASET/CASME_II/CASME_II_FACS.csv"
+        "SAMM": "D:\\DATASET\\SAMM\\SAMM_FACS.csv",
+        "MMEW": "D:\\DATASET\\MMEW\\MMEW_FACS.csv",
+        "CASME_II": "D:\\DATASET\\CASME_II\\CASME_II_FACS.csv"
     },
-    "raw_file": "../.data/onset_apex.json",
-    "dataset": "../.data/dataset_128.json",
-    "face_bounding_box": "../.data/face_bounding_box_128.json"
+    "raw_file": "onset_apex.json",
+    "dataset": "dataset.json",
+    "face_bounding_box": "face_bounding_box.json"
 }

@@ -1,4 +1,3 @@
-import time
 import subprocess
 import cv2
 import numpy as np
@@ -46,11 +45,9 @@ class OpticalFlow:
     
 
     def generate_optical_flow(self, index, path, db, emotion, subject, onset, apex):   
-        start_time = time.process_time()
         # compute optical flow (TVL1Flow)
         subprocess.run(f"bash ../run.sh '{onset}' '{apex}'", shell=True)
-        end_time = time.process_time()
-        print(f"{db} {emotion} {subject} {end_time - start_time}s")
+        print(f"{db} {emotion} {subject}")
 
         onset_img, onset_img_gray = self.read_image(onset)
 

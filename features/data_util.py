@@ -1,3 +1,4 @@
+import os
 import cv2
 import json
 from tqdm import tqdm
@@ -5,7 +6,21 @@ from DataExtractor import DataExtractor
 from OpticalFlow import OpticalFlow
 from utils import read_file, write_data
 
+def handle_windows_path(path):
+    drive = path.split(':')[0]
+    path = path.replace('\\', '/')
+    return path.replace(f'{drive}:/', f'/mnt/{drive.lower()}/')
+
 config = read_file('config.json')
+config['data_dir'] = handle_windows_path(config['data_dir'])
+config['facs_dir']['SAMM'] = handle_windows_path(config['facs_dir']['SAMM'])
+config['facs_dir']['MMEW'] = handle_windows_path(config['facs_dir']['MMEW'])
+config['facs_dir']['CASME_II'] = handle_windows_path(config['facs_dir']['CASME_II'])
+config['out_dir'] = handle_windows_path(config['out_dir'])
+config['raw_file'] = f"{config['out_dir']}/{config['raw_file']}"
+config['dataset'] = f"{config['out_dir']}/{config['dataset']}"
+config['face_bounding_box'] = f"{config['out_dir']}/{config['face_bounding_box']}"
+
 extractor = DataExtractor(config['emotions'], 
                         config['data_dir'],
                         config['facs_dir'])
@@ -45,6 +60,7 @@ def generate_features(emotions, out_dir):
                 db = 'CASME_II'
 
             print(f"{expr} - ({i+1}/{len(data[expr]['onset'])})", end=' | ')
+            os.makedirs(f"{out_dir}/{db}", exist_ok=True)
             OpF.generate_optical_flow(i+1, f"{out_dir}/{db}", db, expr, subject, onset[1], apex[1])
 
     dataset = OpF.get_dataset()

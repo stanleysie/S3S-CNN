@@ -1,15 +1,17 @@
 import random
+import cv2
+import torch
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import cv2
-import torch
 from torch.utils.data import TensorDataset, DataLoader
-from utils import read_file
 
-config = read_file('mer_config.json')
+def handle_windows_path(path):
+    drive = path.split(':')[0]
+    path = path.replace('\\', '/')
+    return path.replace(f'{drive}:/', f'/mnt/{drive.lower()}/')
 
-def generate_losocv_dataset(dataset, subject, visualize=True):
+def generate_losocv_dataset(dataset, subject, out_dir, visualize=True):
     train_X = []
     train_y = []
     test_X = []
@@ -17,7 +19,7 @@ def generate_losocv_dataset(dataset, subject, visualize=True):
     emotions = ['anger', 'sadness', 'surprise', 'fear', 'happiness', 'disgust']
 
     for x, y in zip(dataset['X'], dataset['y']):
-        if subject in x[0]:
+        if f' {subject}' in x[0]:
             test_X.append(x)
             test_y.append(y)
         else:
@@ -42,7 +44,8 @@ def generate_losocv_dataset(dataset, subject, visualize=True):
             ax.bar_label(container)
 
         ax.set_title('Data Distribution')
-        plt.show()
+        plt.savefig(f"{out_dir}/data_distribution_{subject}.png")
+        plt.close(fig)
 
     return train_X, train_y, test_X, test_y
 
@@ -50,13 +53,15 @@ def seed_worker(worker_id):
     worker_seed = torch.initial_seed() % 2**32
     np.random.seed(worker_seed)
     random.seed(worker_seed)
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
 
 def generate_dataloader(X, y, batch_size):
     X_data = []
     y_data = []
 
     g = torch.Generator()
-    g.manual_seed(config['gen_seed'])
+    g.manual_seed(0)
 
     for (of, ops, h, v), y in zip(X, y):
         of = cv2.imread(of, cv2.IMREAD_GRAYSCALE)
@@ -84,8 +89,12 @@ def generate_dataloader(X, y, batch_size):
 def get_subjects(dataset):
     subjects = []
     for data in dataset['X']:
-        _, __, subject, __ = data[0].split(' ')
+        _, __, subject, ___ = data[0].split(' ')
+        if 'SYNTHETIC' in _:
+            subject = '_'.join(subject.split('_')[:2])
+
         if not subject in subjects:
             subjects.append(subject)
     
+    random.shuffle(subjects)
     return subjects
