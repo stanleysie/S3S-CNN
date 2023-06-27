@@ -4,6 +4,6 @@ python3 main.py \
 --epoch 30 \
 --img_dim 128 \
 --n_train 5 \
---seeds "196081390,190531418,34258521,16342552,4094981" \
+--seeds "61526023,210348406,165230425,46684997,81302238" \
 --dataset "D:\DATASET\ME_DATASET\S3S-CNN-v2\dataset_all_synthetic.json" \
 --out_dir "D:\_\THESIS\s3s-cnn\multi_runs\expr_0" \
