@@ -5,5 +5,25 @@ python3 main.py \
 --img_dim 128 \
 --n_train 5 \
 --seeds "61526023,210348406,165230425,46684997,81302238" \
---dataset "D:\DATASET\ME_DATASET\S3S-CNN-v2\dataset_all_synthetic.json" \
---out_dir "D:\_\THESIS\s3s-cnn\multi_runs\expr_0" \
+--dataset "D:\DATASET\ME_DATASET\S3S-CNN-v2\dataset.json" \
+--out_dir "D:\_\THESIS\s3s-cnn\multi_runs\expr_1_me" \
+
+python3 main.py \
+--lr 0.001 \
+--batch_size 128 \
+--epoch 50 \
+--img_dim 128 \
+--n_train 5 \
+--seeds "61526023,210348406,165230425,46684997,81302238" \
+--dataset "D:\DATASET\ME_DATASET\S3S-CNN-v2\dataset_hybrid.json" \
+--out_dir "D:\_\THESIS\s3s-cnn\multi_runs\expr_2_hybrid" \
+
+python3 main.py \
+--lr 0.001 \
+--batch_size 128 \
+--epoch 50 \
+--img_dim 128 \
+--n_train 5 \
+--seeds "61526023,210348406,165230425,46684997,81302238" \
+--dataset "D:\DATASET\ME_DATASET\S3S-CNN-v2\dataset.json" \
+--out_dir "D:\_\THESIS\s3s-cnn\multi_runs\expr_2_me" \

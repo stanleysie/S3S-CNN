@@ -202,12 +202,14 @@ def main():
     print('\n== Training LOSOCV ==')
     for i in range(args.n_train):
         print(f'== Training {i+1}/{args.n_train} ==')
-        seed = args.seeds[i]
-        random.seed(seed)
+        seeds = args.seeds
+        args.seeds = seeds[i]
+        random.seed(args.seeds)
         out_dir = f'{args.out_dir}/train_{i+1}'
         os.makedirs(out_dir, exist_ok=True)
         acc, uf1, uar = train_locosv(epochs=args.epoch, lr=args.lr, batch_size=args.batch_size, out_dir=out_dir)
         results.append([acc, uf1, uar])
+        args.seeds = seeds
         print(f"== Training {i+1}/{args.n_train} done ==\n")
     
     acc = [result[0] for result in results]
