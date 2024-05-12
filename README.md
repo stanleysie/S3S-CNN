@@ -1,4 +1,7 @@
 # Shallow Triple Stream CNN (S3S-CNN) for Micro-Expression Recognition
+S3S-CNN is a shallow three-stream CNN architecture that utilized three optical flow information: horizontal flow component, vertical flow component, and optical strain, to recognize micro-expressions. The training and evaluation method of the model followed the Leave-One-Subject-Out Cross Validation (LOSOCV) to evaluate further the model's capability in recognizing micro-expressions from subjects outside the training database.
+
+![image](assets/S3S-CNN.jpg)
 
 ## Setup and Installing Dependencies
 ```
